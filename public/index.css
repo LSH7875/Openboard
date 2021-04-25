@@ -176,5 +176,6 @@ td:nth-child(2){
 
 /**************sign up***************************/
 .pwerror{
-    display:hidden;
+    display:none;
+    color:red;
 }
