@@ -173,3 +173,8 @@ td:nth-child(2){
     border-bottom: 1px solid lightgray;
     float:right;
 }
+
+/**************sign up***************************/
+.pwerror{
+    display:hidden;
+}

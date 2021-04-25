@@ -16,18 +16,20 @@
         <form method='post' action='./'>
         <ul>
             <li>이메일</li>
-            <li><input type="email"></li>
+            <li><input class = "id" name = "id" type="email"></li>
             <li>비밀번호</li>
-            <li><input type="text"></li>
+            <li><input class = "password" name = "password" type="text"></li>
             <li>비밀번호 확인</li>
-            <li><input type="text"></li>
+            <li><input onmouseup = "pwcheck()" class = "password2" type="text"></li>
+            <li><div class="pwerror" >비밀번호가 일치하지 않습니다.</div></li>
             <li>성별</li>
             <li>
                 <input type="radio" name="sex" value="M" checked>남자 <input type="radio" name="sex" value="W" >여자 
             </li>
         </ul>
-        <input type = "submit" value="작성완료">
+        <input class="smfunc" type = "submit" value="작성완료">
         </form>
     </div>
+    <link type="text/javascript" href="/common.js">
 </body>
 </html>

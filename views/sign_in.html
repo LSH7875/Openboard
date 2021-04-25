@@ -12,15 +12,12 @@
         <div id="menu">
             <h2>로그인하기</h2>
         </div>
-        <form>
+        <form method = "post" action="./signin">
             <label for="id">이메일</label>
-            <input type="text" id="id">
+            <input type="text" name = "email" id="id"><br>
             <label for="pw">비밀번호</label>
-            <input type="text" id="pw">
-            <label for="pwd">비밀번호확인</label>
-            <input type="text" id="pwd">
-            성별:<input>
-            <input type="submit" value="회원가입하기">
+            <input type="password" name = "password" id="pw"><br>
+            <input type="submit" value="로그인">
         </form>
     </div>
 </body>
