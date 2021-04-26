@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="menu">
+            <h2>게시판</h2>
+        </div>
+        <div id="list">
+            <form method="post" action="./write">
+                <span class="left">
+                    제목
+                    <input class="board_subject" type="text" name="subject">
+                </span>
+                <span class="right">
+                    작성자
+                    <input class="board_name" type="text" name="board_name">
+                </span><br>
+                <span class="left">내용</span>
+                <textarea class="board_text" name="context"></textarea><br>
+                <a class = "list_button left" href='./list'>목록으로</a>
+                <input class = "list_button right" type="submit" value="작성완료">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+    <div id="wrap">
+
+        <div id="menu">
+            <h2>게시판</h2>
+        </div>
+
+        <div id="list">
+            <form method="post" action="./modify">
+                제목<input class="board_subject" type="text" name="board_subject" value="{{title}}"><br>
+                내용<input class = "board_text" type="text" name="board_name" value="{{content}}">
+                <input class="hidden" type="text" name="board_num" value={{idx}}>
+
+                <a class = "list_button left" href='./list'>목록으로</a>
+                <input class = "list_button right" type="submit" value="작성완료">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

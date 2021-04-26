@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="menu">
+            <h2>회원가입하기</h2>
+        </div>
+
+        <form method='post' action='./signup'>
+        <ul>
+            <li>이메일</li>
+            <li><input class = "idgit " name = "id" type="email" ></li>
+            <input type="button" value="아이디 중복체크" onclick="showPopup();" />
+            <div class="idckeck hidden" value={{idchecking}}></div> 
+            <li>비밀번호</li>
+            <li><input onchange = "pwcheck()" class = "password" name = "password" type="text"></li>
+            <li>비밀번호 확인</li>
+            <li><input onchange = "pwcheck()" class = "password2" type="text"></li>
+            <li><div class="pwerror" >비밀번호가 일치하지 않습니다.</div></li>
+            <li>성별</li>
+            <li>
+                <input type="radio" name="sex" value="M" checked>남자 <input type="radio" name="sex" value="W" >여자 
+            </li>
+        </ul>
+        <input class="smfunc" type = "submit" onclick="submitfunc()" value="작성완료" disabled>
+        </form>
+    </div>
+    <script type="text/javascript" src="/common.js"></script>
+</body>
+</html>
